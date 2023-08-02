@@ -2,3 +2,32 @@
   font-family: sans-serif;
   text-align: center;
 }
+.circle{
+  border-radius : 50%;
+   background-color : #EEA302;
+  height :30px;
+  width:30px;
+   border:0;
+   margin-left:0px;
+}
+/* .leftcontainer{
+  float: left;
+  width: 50%;
+}
+.rightcontainer{
+  float: left;
+  width:50%;
+}
+.headerleft{
+  float:left;
+  width:50%;
+  padding:10px;
+}
+.headerright{
+  float:left;
+  width:50%;
+} */
+span.bold{
+  font-weight : bold;
+  font-size :20px;
+}
