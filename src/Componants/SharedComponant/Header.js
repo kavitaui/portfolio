@@ -6,10 +6,7 @@ export default function Header() {
           <div className = "row">
             <div className = "col-7 px-2 py-5" >
               <div className = "row">
-                <div className = "col-2  py -2">  
-                <button className="circle">  </button></div>
-                <div className = "col-10 py -2"> <span className="bold">Nicol Rider</span> Editor </div> 
-
+              <span className="logo-wrapper"><span className="bold logo"><span className="circle"></span>Kavita Pandey</span> Editor</span>
               </div>
          
         </div>
