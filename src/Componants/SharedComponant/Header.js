@@ -14,7 +14,7 @@ export default function Header(props) {
           </div>
           <div className="col-5 px-2 py-5">
             <ul className="list-inline nav-top">
-              <li><a  onClick={()=>props.message('kavita Dublin')}> <i className="bi bi-facebook"></i> Resume</a></li>
+              <li><link to="/ Resume">Resume</link></li>
               <li><i class="bi bi-4-square"></i><Link to="/projects">Project</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
