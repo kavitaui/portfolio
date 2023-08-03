@@ -52,6 +52,7 @@ span.h1 {
 }
 .pic {
   border-radius: 70%;
+  width: 276px;
 }
 .resume {
   border-radius: 50%;
@@ -99,4 +100,10 @@ hr.new1{
   border-top: 2px solid black;
   margin-top: 10em;
 
+}
+ul.list-inline.nav-top {
+  float: right;
+}
+.font{
+  font-family: ui-serif;
 }

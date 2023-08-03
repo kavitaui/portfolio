@@ -13,7 +13,7 @@ export default function HomeComponant(){
                     </div>
                     <div className="col-6 px-2 py-2"><span className = "h1">hello</span>
                   <div> <span className ="bold">A Bit About Me </span></div>
-                  <div>I'm a paragraph. Click here to add your own text and edit me.I'm a great place for 
+                  <div className = "font">I'm a paragraph. Click here to add your own text and edit me.I'm a great place for 
                     you to tell a story and let your users to know a little more about you.</div> 
                    <div className="mt-4"> <button className ="resume">Resume</button>
                     <button className ="projects mx-2" >projects</button>

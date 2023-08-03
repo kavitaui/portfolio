@@ -1,23 +1,27 @@
 export default function Footer(){
     return( 
-        <div className="footer">
-            <hr className = "new1"></hr>
+        
+           
             <div className ="container">
-                <div claasName = "row">
-                    <div className = "col-3 px-2 py-2">
-                        Phone<br>123-456-7890</br>
 
+                < div className= "col-12 px- py-2">
+                <div className= "row px-2 py-2">
+                <hr className = "new1"></hr>
+                  
+                    <div className= "col-3 ">
+                       <p> Phone 123-456-7890</p>
+                     </div>
+                    <div className="col-3 ">
+                     <p>Emailinfo@mysite.com</p>
                     </div>
-                    <div className = "col-3 px-2 py-2">
-                     Email<br>info@mysite.com</br>
+                    <div className= "col-3  ">
+                       <p> Follow Me
+                        in twitter</p>
+                       
                     </div>
-                    <div className = "col-3 px-2 py-2">
-                        Follow Me
-                        <br>in twitter</br>
-                    </div>
-                    <div className = "col-3 px-2 py-2">
-                        2023 By Kavita Pandey
-                      <br>  proudly created with wix.com</br>
+                    <div className="col-3 ">
+                      <p>  2023 By Kavita Pandey
+                       proudly created with wix.com</p>
                     </div>
                 </div>
             </div>

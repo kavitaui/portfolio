@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className="container">
+    <>
 
       <div className="col-12">
         <div className="row">
@@ -19,6 +19,6 @@ export default function Header() {
           </div>
       </div>
     </div>
-      </div >
+      </>
   );
 }
