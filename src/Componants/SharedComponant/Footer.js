@@ -16,7 +16,7 @@ export default function Footer(){
                     </div>
                     <div className= "col-3  ">
                        <p> Follow Me
-                        in twitter</p>
+                        in <i class="bi bi-twitter"></i></p>
                        
                     </div>
                     <div className="col-3 ">

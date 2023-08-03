@@ -107,3 +107,6 @@ ul.list-inline.nav-top {
 .font{
   font-family: ui-serif;
 }
+.bi:hover{
+   color:blue;
+}
