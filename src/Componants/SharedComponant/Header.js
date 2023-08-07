@@ -15,7 +15,7 @@ export default function Header(props) {
           <div className="col-5 px-2 py-5">
             <ul className="list-inline nav-top">
               <li><Link to="/Resume">Resume</Link></li>
-              <li><i class="bi bi-4-square"></i><Link to="/projects">Project</Link></li>
+              <li><i className="bi bi-4-square"></i><Link to="/projects">Project</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
