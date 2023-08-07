@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 export default function Header(props) {
   return (
-    <>
+    <div className="header-wrapper">
 
       <div className="col-12">
         <div className="row">
@@ -14,13 +14,13 @@ export default function Header(props) {
           </div>
           <div className="col-5 px-2 py-5">
             <ul className="list-inline nav-top">
-              <li><link to="/ Resume">Resume</link></li>
+              <li><Link to="/ Resume">Resume</Link></li>
               <li><i class="bi bi-4-square"></i><Link to="/projects">Project</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
       </div>
     </div>
-      </>
+      </div>
   );
 }

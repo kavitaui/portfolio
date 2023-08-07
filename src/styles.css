@@ -48,11 +48,14 @@ span.bold {
 }
 span.h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 100px;
+  font-family: semibold,'work sans',sans-serif;
+  letter-spacing: -0.02em;
+  
 }
 .pic {
   border-radius: 70%;
-  width: 276px;
+  width: 480px;
 }
 .resume {
   border-radius: 50%;
@@ -105,8 +108,15 @@ ul.list-inline.nav-top {
   float: right;
 }
 .font{
-  font-family: ui-serif;
+  font-family: semibold,'work sans',sans-serif;
+  letter-spacing: -0.02em;
+  
 }
 .bi:hover{
    color:blue;
+}
+.header-wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 40px - 40px);
 }
