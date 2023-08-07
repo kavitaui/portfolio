@@ -2,6 +2,7 @@ import "./styles.css";
 import Header from "./Componants/SharedComponant/Header";
 import Footer from "./Componants/SharedComponant/Footer";
 import HomeComponant from "./Componants/HomeComponant";
+
 import {Outlet} from 'react-router-dom'
 import { useState } from "react";
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
      
       <Outlet />
       <Footer />
+      
 
     
     </div>

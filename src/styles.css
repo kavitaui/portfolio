@@ -1,6 +1,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  background-color: #f4f4f4;
 }
 .circle {
   border-radius: 50%;
@@ -33,6 +34,13 @@
 } */
 span.bold {
   font-weight: bold;
+  font-size:22px;
+  margin-block: 0;
+    margin: 0;
+    letter-spacing: normal;
+    color: rgb(0,0,0);
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
 }
 .logo-wrapper{
   line-height: 30px;
@@ -49,8 +57,10 @@ span.bold {
 span.h1 {
   font-weight: bold;
   font-size: 100px;
-  font-family: semibold,'work sans',sans-serif;
+  font-family: 'work sans',sans-serif;
   letter-spacing: -0.02em;
+  color: rgb(0,0,0);
+  vertical-align: baseline;
   
 }
 .pic {
@@ -60,22 +70,24 @@ span.h1 {
 .resume {
   border-radius: 50%;
   background-color: #eea201;
-  height: 120px;
-  width: 120px;
+  height: 140px;
+  width: 140px;
   border: 1px solid #a6842c;
 }
 .projects {
   border-radius: 50%;
   background-color: #ff3d24;
-  height: 120px;
-  width: 120px;
+  height: 140px;
+  width: 140px;
   border: 1px solid #b04e44;
+ 
+
 }
 .contact {
   border-radius: 50%;
   background-color: #7fd8db;
-  height: 120px;
-  width: 120px;
+  height: 140px;
+  width: 140px;
   border: 1px solid #73aca7;
 }
 .vr{
@@ -119,4 +131,7 @@ ul.list-inline.nav-top {
   margin-left: auto;
   margin-right: auto;
   width: calc(100% - 40px - 40px);
+}
+.projects:hover,.contact:hover,.resume:hover{
+  background-color: white;
 }

@@ -6,12 +6,12 @@ export default function HomeComponant(props){
         <div className="col-12">
           <div className="row">
             <div className="col-1 px-2 py-2"></div>
-            <div className="col-10 px-2 py-2">
+            <div className="col-11 px-2 py-2">
                 <div className = "row" >
-                    <div className="col-7 px-2 py-2"> 
+                    <div className="col-6 px-2 py-2"> 
                       <img className = "pic" src={image} />
                     </div>
-                    <div className="col-5 px-2 py-2 pt-5"><span className = "h1">Hello</span>
+                    <div className="col-6 px-2 py-2 pt-5"><span className = "h1">Hello</span>
                   <div> <span className ="bold">A Bit About Me </span></div>
                   <div className = "font">I'm a paragraph. Click here to add your own text and edit me.I'm a great place for 
                     you to tell a story and let your users to know a little more about you.</div> 
