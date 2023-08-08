@@ -1,4 +1,6 @@
-export default function contact() {
+export default function contact()
+
+{
     return (
         <div className="container px-2 py-2">
 
@@ -43,7 +45,8 @@ export default function contact() {
                                      <div className="col-6">
                                 <label for="message" className="form-label">Message</label> 
                                 <div className="col-12">
-                                  <textarea className ="form-control" style={{maxHeight:'200px',resize:'vertical'}} id="FormControlInput1" />
+                                  <textarea className ="form-control" style={{Height:'200px',resize:'vertical'}}
+                                  rows ="6" cols ="50" id="FormControlInput1" />
 
                                 </div>
                                 </div> 

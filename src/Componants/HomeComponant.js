@@ -17,7 +17,7 @@ export default function HomeComponant(props){
                     you to tell a story and let your users to know a little more about you.</div> 
                    <div className="mt-4"> <button className ="resume">Resume</button>
                     <button className ="projects mx-2" >projects</button>
-                    <button className ="contact" >contact</button></div>
+                    <button className ="contact" >contact</button></div>  
                 </div>
                 </div>
             </div>
