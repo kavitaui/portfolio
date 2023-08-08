@@ -7,35 +7,50 @@ export default function contact() {
                 </div>
                 <div className="row px-2 py-2">
                     <div className="col-6 px-2 py-2">
-                        Looking forward to hearing from you</div>
-                    <div class="col-6 px-2 py-2">
-                        <div class="row ">
-                            <div class="col-6">
+                        Looking forward to hearing from you
+                        <div><h5>Phone </h5>
+                        123-456-7890</div>
+                        <div><h5>Email:</h5>
+                        info@mysite.com</div>
+                        </div>
+                    <div className="col-6 px-2 py-2">
+                        <div className="row ">
+                            <div className="col-6">
 
-                                <label for="fname" class="form-label">First Name</label>
-                                <div class="col-12">
-                                    <input type="text" class="form-control" placeholder="first name" aria-label="first name" />
+                                <label for="fname" className="form-label">First Name</label>
+                                <div className="col-12">
+                                    <input type="text" className="form-control" placeholder="first name" aria-label="first name" />
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <label for="lname" class="form-label">last Name</label>
+                            <div className="col-6">
+                                <label for="lname" className="form-label">last Name</label>
                                 <div className="col-12">
-                                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" /></div>
+                                    <input type="text" className="form-control" placeholder="Last name" aria-label="Last name" /></div>
                             </div>
 
-                            <div class="col-6">
+                            <div className="col-6">
 
-                                <label for="Email" class="form-label">Email*</label>
-                                <div class="col-12">
-                                    <input type="text" class="form-control" placeholder="first name" aria-label="first name" />
+                                <label for="Email" className="form-label">Email*</label>
+                                <div className="col-12">
+                                    <input type="text" className="form-control" placeholder="first name" aria-label="first name" />
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <label for="subject" class="form-label">Subject</label>
+                            <div className="col-6">
+                                <label for="subject" className="form-label">Subject</label>
                                 <div className="col-12">
-                                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" /></div>
+                                    <input type="text" className="form-control" placeholder="Last name" aria-label="Last name" /></div>
                                      </div>
-                                     
+                                     <div className="col-6">
+                                <label for="message" className="form-label">Message</label> 
+                                <div className="col-12">
+                                  <textarea className ="form-control" style={{maxHeight:'200px',resize:'vertical'}} id="FormControlInput1" />
+
+                                </div>
+                                </div> 
+                                <div className="col-6">
+                                <div className="mt-4"> <button className ="resume">Submit</button> </div> 
+                                    </div>
+
                         </div>
                     </div>
                 </div>
