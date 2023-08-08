@@ -8,19 +8,46 @@ export default function contact() {
                 <div className="row px-2 py-2">
                     <div className="col-6 px-2 py-2">
                         Looking forward to hearing from you</div>
-                    <div className="col-6 px-2 py-2">
-                        <div class="row px-2 py-2">
+                    <div class="col-6 px-2 py-2">
+                        <div class="row ">
                             <div class="col-6">
-                                <input type="text" class="form-control" placeholder="First name" aria-label="First name"/>
-                            </div>
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"/>
-                            </div>
-                        </div>
 
+                                <label for="fname" class="form-label">First Name</label>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="first name" aria-label="first name" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="lname" class="form-label">last Name</label>
+                                <div className="col-12">
+                                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" /></div>
+                            </div>
+
+                            <div class="col-6">
+
+                                <label for="Email" class="form-label">Email*</label>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="first name" aria-label="first name" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="subject" class="form-label">Subject</label>
+                                <div className="col-12">
+                                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" /></div>
+                                     </div>
+                                     
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
     );
 }
