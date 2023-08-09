@@ -70,25 +70,27 @@ span.h1 {
 .resume {
   border-radius: 50%;
   background-color: #eea201;
-  height: 140px;
-  width: 140px;
-  border: 1px solid #a6842c;
+  height: 180px;
+  width: 180px;
+  border: 2px solid black;
+  font-size: 30px;
 }
 .projects {
   border-radius: 50%;
   background-color: #ff3d24;
-  height: 140px;
-  width: 140px;
-  border: 1px solid #b04e44;
- 
+  height: 180px;
+  width: 180px;
+  border: 2px solid black;
+  font-size: 30px;
 
 }
 .contact {
   border-radius: 50%;
   background-color: #7fd8db;
-  height: 140px;
-  width: 140px;
-  border: 1px solid #73aca7;
+  height: 180px;
+  width: 180px;
+  border: 2px solid black;
+  font-size: 30px;
 }
 .vr{
   border-left: 2px solid black;
@@ -134,4 +136,5 @@ ul.list-inline.nav-top {
 }
 .projects:hover,.contact:hover,.resume:hover{
   background-color: white;
+
 }
