@@ -26,6 +26,7 @@ export default function App() {
       <Header value={fname} message = {clickMe}/>
      
       <Outlet />
+      
       <Footer />
       
 

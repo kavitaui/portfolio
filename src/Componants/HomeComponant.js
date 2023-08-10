@@ -1,5 +1,6 @@
 import image from "../Asset/image/nicolRider.jpg"
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 export default function HomeComponant(props) {
   const routeVariants = {
     initial: {
@@ -46,12 +47,12 @@ export default function HomeComponant(props) {
                  <motion.span  variants={childVariants} initial="initial" animate="final"><img className="pic" src={image} /></motion.span>
                 </div>
                 <div className="col-6 px-2 py-2 pt-5"><motion.span  variants={childVariants} initial="initial" animate="final" className="h1">Hello</motion.span>
-                  <motion.div   variants={childVariants} initial="initial" animate="final"><span>A Bit About Me </span> </motion.div>
+                  <motion.div   variants={childVariants} initial="initial" animate="final"><h5>A Bit About Me </h5> </motion.div>
                   <motion.div  variants={childVariants} initial="initial" animate="final"> <div className="font">I'm a paragraph. Click here to add your own text and edit me.I'm a great place for
                     you to tell a story and let your users to know a little more about you.</div></motion.div>
-                  <motion.button  initial={{ opacity: 0, y: "50px" }} animate={{ opacity: 1, y: ".2px" }} transition={{ duration: .5, delay: .5, }} className="resume mt-5">Resume</motion.button>
-                  <motion.button  initial={{ opacity: 0, y: "52px" }} animate={{ opacity: 1, y: ".3px" }} transition={{ duration: .75, delay: .8, }} className="projects mx-2" >projects</motion.button>
-                  <motion.button  initial={{ opacity: 0, y: "54px" }} animate={{ opacity: 1, y: ".4px" }} transition={{ duration: 1, delay: 1, }} className="contact" >contact</motion.button></div>
+                   < Link to = "/resume"> <motion.button  initial={{ opacity: 0, y: "50px" }} animate={{ opacity: 1, y: ".2px" }} transition={{ duration: .5, delay: .5, }} className="resume mt-5"> Resume</motion.button></Link>
+                   < Link to = "/projects">  <motion.button  initial={{ opacity: 0, y: "52px" }} animate={{ opacity: 1, y: ".3px" }} transition={{ duration: .75, delay: .8, }} className="projects mx-2" >projects</motion.button></Link>
+                   < Link to = "/contact">  <motion.button  initial={{ opacity: 0, y: "54px" }} animate={{ opacity: 1, y: ".4px" }} transition={{ duration: 1, delay: 1, }} className="contact" >contact</motion.button></Link></div>
 
               </div>
             </div>

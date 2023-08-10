@@ -11,17 +11,17 @@ export default function Resume() {
                     <div className="row">
 
                         <div className="col-6 ">
-                            Work
-                            <div className="bold">Experience</div>
+                           <h4> Work</h4>
+                            <div className="bold"><h4>Experience</h4></div>
                         </div>
                         <div className="col-6 px-2 -y-2">
                             <div className="row">
                                 <div className="col-3 px-2 py-2 ">
-                                    2035 - Present
+                                    <h4>2035 - Present</h4>
                                 </div>
 
                                 <div className="col-7 px-2 py-2 ">
-                                    <span classname="bold">Editor </span>
+                                    <span classname="bold"><h4>Editor</h4> </span>
                                     <div className="font">
                                         I'm a paragraph. Click here to add your own
                                         text and edit me. It’s easy. Just click “Edit Text”
@@ -31,7 +31,7 @@ export default function Resume() {
                             </div>
                             <div className="row">
                                 <div className="col-3 px-2 py-2 ">
-                                    2035 - 2035
+                                    <h4>2035 - 2035</h4>
                                 </div>
                                 <div className="col-7 px-2 py-2 ">
                                     <span classname="bold">Writer at Large </span>
@@ -53,16 +53,16 @@ export default function Resume() {
 
                         <div className="col-6 ">
                             
-                            <div className="bold">Education</div>
+                            <div className="bold"><h4>Education</h4></div>
                         </div>
                         <div className="col-6 px-2 -y-2">
                             <div className="row">
                                 <div className="col-3 px-2 py-2 ">
-                                    2035 - Present
+                                   <h4>2035 - Present</h4> 
                                 </div>
 
                                 <div className="col-7 px-2 py-2 ">
-                                    <span classname="bold">Editor </span>
+                                    <span classname="bold"><h4>Editor</h4> </span>
                                     <div className="font">
                                         I'm a paragraph. Click here to add your own
                                         text and edit me. It’s easy. Just click “Edit Text”
@@ -72,7 +72,7 @@ export default function Resume() {
                             </div>
                             <div className="row">
                                 <div className="col-3 px-2 py-2 ">
-                                    2035 - 2035
+                                   <h4> 2035 - 2035</h4>
                                 </div>
                                 <div className="col-7 px-2 py-2 ">
                                     <span classname="bold">Writer at Large </span>
@@ -94,17 +94,17 @@ export default function Resume() {
 
 
 
-                    <div className="bold"> Skills
-                        & Expertise</div>
+                    <div className="bold"> <h4>Skills
+                        & Expertise</h4></div>
                 </div>
                 <div className="col-6 px-2 -y-2">
                     <div className="row">
                         <div className="col-3 px-2 py-2 ">
-                            2035 - Present
+                            <h4>2035 - Present</h4>
                         </div>
 
                         <div className="col-7 px-2 py-2 ">
-                            <span classname="bold">Editor </span>
+                            <span classname="bold"><h4>Editor</h4></span>
                             <div className="font">
                                 I'm a paragraph. Click here to add your own
                                 text and edit me. It’s easy. Just click “Edit Text”
@@ -114,7 +114,7 @@ export default function Resume() {
                     </div>
                     <div className="row">
                         <div className="col-3 px-2 py-2 ">
-                            2035 - 2035
+                            <h4>2035 - 2035</h4>
                         </div>
                         <div className="col-7 px-2 py-2 ">
                             <span classname="bold">Writer at Large </span>

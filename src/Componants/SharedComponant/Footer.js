@@ -9,14 +9,16 @@ export default function Footer(){
                 <hr className = "new1"></hr>
                   
                     <div className= "col-3 ">
-                       <p> Phone 123-456-7890</p>
+                       <p> <h4>Phone: </h4>
+                         123-456-7890</p>
                      </div>
                     <div className="col-3 ">
-                     <p>Emailinfo@mysite.com</p>
+                     <p><h4>Email</h4>
+                        info@mysite.com</p>
                     </div>
                     <div className= "col-3  ">
-                       <p> Follow Me
-                        in <i className="bi bi-twitter"></i></p>
+                       <p><h4> Follow Me
+                        in <i className="bi bi-twitter"></i></h4></p>
                        
                     </div>
                     <div className="col-3 ">

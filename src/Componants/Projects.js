@@ -13,7 +13,7 @@ export default function Projects() {
 
                     <div className="col-6 ">
 
-                        <div className="bold">Project Name 01</div>
+                        <div className="bold"><h4>Project Name 01</h4> </div>
                         I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me
                         to add your own content and make changes to the font. I’m
@@ -36,7 +36,7 @@ export default function Projects() {
                 <div className="row pt-5">
 
                     <div className="col-6 ">
-                        <div className="bold">Project Name 02</div>
+                        <div className="bold"><h4>Project Name 02</h4> </div>
                         I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me
                         to add your own content and make changes to the font. I’m
@@ -58,7 +58,7 @@ export default function Projects() {
                 <div className="row pt-5">
 
                     <div className="col-6 ">
-                        <div className="bold">Project Name 03</div>
+                        <div className="bold"><h4>Project Name 03</h4></div>
                         I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me
                         to add your own content and make changes to the font. I’m

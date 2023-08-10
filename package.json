@@ -8,8 +8,10 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "axios": "^1.4.0",
     "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5",
+    "framer-motion": "^10.15.1",
     "loader-utils": "3.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
