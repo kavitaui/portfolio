@@ -20,7 +20,7 @@ export default function Header(props) {
             <ul className="list-inline nav-top">
            
               <li><Link to="/Resume">Resume</Link></li>
-              <li><i className="bi bi-4-square"></i><Link to="/projects">Project</Link></li>
+              <li><Link to="/projects">Project</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>

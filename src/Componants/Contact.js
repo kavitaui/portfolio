@@ -1,7 +1,111 @@
-export default function contact()
+import { useState } from "react";
 
-{
+
+export default function contact() {
+
+    const [formData, setFormData] = useState({
+        fname: '',
+        lname: '',
+        email: '',
+        subject: '',
+        message: ''
+
+    });
+    const [errors, setErrors] = useState({
+        fname: '',
+        lname: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (validateForm()) {
+
+        }
+    };
+    const handleChange = (e) => {
+
+        const name = e.target.name;
+        const value = e.target.value;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+    const validateForm = () => {
+
+        let isValid = true;
+        const newErrors = { ...errors };
+
+        // Validation logic for each field
+        if (formData.fname.trim() === '') {
+            newErrors.fname = 'fName is required';
+
+
+            isValid = false;
+        }
+        else {
+            newErrors.fname = '';
+        }
+        if (formData.lname.trim() === '') {
+            newErrors.lname = 'lName is required';
+            isValid = false;
+        }
+        else {
+            newErrors.lname = '';
+
+        }
+        if (formData.email.trim() === '') {
+            newErrors.email = 'email is required';
+            isValid = false;
+        }
+        else {
+            newErrors.email = '';
+
+        }
+        if (formData.subject.trim() === '') {
+            newErrors.subject = 'subject is required';
+            isValid = false;
+        }
+        else {
+            newErrors.subject = '';
+
+        }
+        if (formData.message.trim() === '') {
+            newErrors.message = 'message is required';
+            isValid = false;
+        }
+        else {
+            newErrors.message = '';
+
+        }
+
+
+
+
+        setErrors(newErrors);
+        return isValid;
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return (
+
         <div className="container px-2 py-2">
 
             <div className="col-12 px-2 py-2">
@@ -11,52 +115,61 @@ export default function contact()
                     <div className="col-6 px-2 py-2">
                         Looking forward to hearing from you
                         <div><h5>Phone </h5>
-                        123-456-7890</div>
+                            123-456-7890</div>
                         <div><h5>Email:</h5>
-                        info@mysite.com</div>
-                        </div>
+                            info@mysite.com</div>
+                    </div>
+                  
                     <div className="col-6 px-2 py-2">
                         <div className="row ">
                             <div className="col-6">
-
-                                <label for="fname" className="form-label"><h5>First Name</h5></label>
-                                <div className="col-12">
-                                    <input type="text" className="form-control" placeholder="first name" aria-label="first name" />
-                                </div>
+                               
+                                    <label for="fname" className="form-label"><h5>First Name</h5></label>
+                                    <div className="col-12">
+                                        <input type="text" onChange={handleChange} className="form-control" placeholder="first name" aria-label="first name" name="fname" />
+                                        <p>{errors.fname.length > 0 ? errors.fname : null}</p>
+                                    </div>
                             </div>
                             <div className="col-6">
                                 <label for="lname" className="form-label"><h5>Last Name</h5></label>
                                 <div className="col-12">
-                                    <input type="text" className="form-control" placeholder="Last name" aria-label="Last name" /></div>
+                                    <input type="text" onChange={handleChange} className="form-control" placeholder="Last name" aria-label="Last name" name="lname" /></div>
+                                <p>{errors.lname.length > 0 ? errors.lname : null}</p>
                             </div>
 
                             <div className="col-6">
 
                                 <label for="Email" className="form-label"><h5>Email*</h5></label>
+
                                 <div className="col-12">
-                                    <input type="text" className="form-control" placeholder="email" aria-label="first name" />
+                                    <input type="text" onChange={handleChange} className="form-control" placeholder="email" name="email" aria-label="first name" />
+                                    <p>{errors.email.length > 0 ? errors.email : null}</p>
                                 </div>
                             </div>
                             <div className="col-6">
                                 <label for="subject" className="form-label"><h5>Subject</h5></label>
                                 <div className="col-12">
-                                    <input type="text" className="form-control" placeholder="subject" aria-label="subject" /></div>
-                                     </div>
-                                     <div className="col-6">
-                                <label for="message" className="form-label"><h5>Message</h5></label> 
+                                    <input type="text" onChange={handleChange} className="form-control" placeholder="subject" name="subject" aria-label="subject" /></div>
+                                <p>{errors.subject.length > 0 ? errors.subject : null}</p>
+                            </div>
+                            <div className="col-6">
+                                <label for="message" className="form-label"><h5>Message</h5></label>
                                 <div className="col-12">
-                                  <textarea className ="form-control" style={{Height:'200px',resize:'vertical'}}
-                                  rows ="6" cols ="50" id="FormControlInput1" />
-
+                                    <textarea className="form-control" onChange={handleChange} name="message" style={{ Height: '200px', resize: 'vertical' }}
+                                        rows="6" cols="50" id="FormControlInput1" />
+                                    <p>{errors.message.length > 0 ? errors.message : null}</p>
                                 </div>
-                                </div> 
-                                <div className="col-6">
-                                <div className="mt-4"> <button className ="resume">Submit</button> </div> 
-                                    </div>
+                            </div>
+                            <div className="col-6">
+                                <div className="mt-4"> <button className="resume" onClick={handleSubmit}>Submit</button> </div>
+                            </div>
 
                         </div>
+
                     </div>
+
                 </div>
+               
             </div>
         </div>
 
