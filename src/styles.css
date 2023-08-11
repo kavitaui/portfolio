@@ -173,3 +173,7 @@ font-size:28px;
 span.k{
   font-size: 16px;
 }
+.error-field{
+  border:2px solid red;
+  border-radius: 2px;
+}
