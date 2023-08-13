@@ -1,14 +1,16 @@
 {
     "home" : {
-        "title":"hello ",
+        "title":"Hello",
         "subtitle":"A Bit About Me",
         "description": "I'm a paragraph. Click here to add your own text and edit me.I'm a great place for you to tell a story and let your users to know a little more about you.",
-        
+        "image":{
+          "path":"https://s8d7.turboimg.net/t1/92156874_nicolRider.jpg"
+        },
         "buttons":[
            {
             "name": "Resume",
             "route": "/resume",
-            "class":"resume",
+            "class":"resume ",
             "animate":{
                 "initial":{ "opacity": 0," y": "50px" } ,
                 "final":{"opacity": 1," y": ".2px"},
@@ -16,17 +18,17 @@
             }
            },
            {
-            "name": "projects",
+            "name": "Projects",
             "route": "/projects",
-            "class":"projects",
+            "class":"projects mx-2" ,
             "animate":{
                 "initial":{ "opacity": 0," y": "52px" } ,
                 "final":{"opacity": 1," y": ".3px"},
-                "transition":{"duration": ".75", "delay": ".8"}
+                "transition":{"duration": ".75", "delay": ".7"}
             }
            },
            {
-            "name": "contact",
+            "name": "Contact",
             "route": "/contact",
             "class":"contact",
             "animate":{
