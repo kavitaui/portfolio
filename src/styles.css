@@ -177,3 +177,13 @@ span.k{
   border:2px solid red;
   border-radius: 2px;
 }
+.sucess{
+  border:2px solid green;
+  border-radius: 2px;
+}
+.message{
+  color: green;
+}
+.popup{
+  color:red;
+}

@@ -45,6 +45,8 @@ export default function contact() {
             ...prevData,
             [name]: value,
         }));
+        validateForm()
+
     };
 
     const validateForm = () => {
@@ -124,10 +126,10 @@ export default function contact() {
                 </div>
                 <div className="row px-2 py-2">
                     <div className="col-6 px-2 py-2">
-                        Looking forward to hearing from you
-                        <div><h5>Phone </h5>
+                       <h5> Looking forward to hearing from you</h5>
+                        <div><h4>Phone </h4>
                             123-456-7890</div>
-                        <div><h5>Email:</h5>
+                        <div><h4>Email:</h4>
                             info@mysite.com</div>
                     </div>
                   
@@ -138,15 +140,15 @@ export default function contact() {
                                
                                     <label for="fname" className="form-label"><h5>First Name</h5></label>
                                     <div className="col-12">
-                                        <input type="text"  onChange={handleChange} className={[errors.fname.length ? "form-control error-field":"form-control"]} placeholder="first name" aria-label="first name" name="fname" value={formData.fname}/>
-                                        <p>{errors.fname.length > 0 ? errors.fname : null}</p>
+                                        <input type="text"  onChange={handleChange} className={`form-control ${errors.fname.length ? 'error-field' : ''} ${formData.fname ? 'sucess' : ''}`} placeholder="first name" aria-label="first name" name="fname" value={formData.fname}/>
+                                        <p className="popup">{errors.fname.length > 0 ? errors.fname : null}</p>
                                     </div>
                             </div>
                             <div className="col-6">
                                 <label for="lname" className="form-label"><h5>Last Name</h5></label>
                                 <div className="col-12">
-                                    <input type="text" onChange={handleChange} className={[errors.lname.length ? "form-control error-field":"form-control"]} placeholder="Last name" aria-label="Last name" name="lname" value={formData.lname}/></div>
-                                <p>{errors.lname.length > 0 ? errors.lname : null}</p>
+                                    <input type="text" onChange={handleChange} className={`form-control ${errors.lname.length ? 'error-field' : ''} ${formData.lname ? 'sucess' : ''}`} placeholder="Last name" aria-label="Last name" name="lname" value={formData.lname}/></div>
+                                <p className="popup">{errors.lname.length > 0 ? errors.lname : null}</p>
                             </div>
 
                             <div className="col-6">
@@ -154,28 +156,28 @@ export default function contact() {
                                 <label for="Email" className="form-label"><h5>Email*</h5></label>
 
                                 <div className="col-12">
-                                    <input type="text" onChange={handleChange} className={[errors.email.length ? "form-control error-field":"form-control"]} placeholder="email" name="email" aria-label="first name" value={formData.email}/>
-                                    <p>{errors.email.length > 0 ? errors.email : null}</p>
+                                    <input type="text" onChange={handleChange} className={`form-control ${errors.email.length ? 'error-field' : ''} ${formData.email ? 'sucess' : ''}`} placeholder="email" name="email" aria-label="first name" value={formData.email}/>
+                                    <p className="popup">{errors.email.length > 0 ? errors.email : null}</p>
                                 </div>
                             </div>
                             <div className="col-6">
                                 <label for="subject" className="form-label"><h5>Subject</h5></label>
                                 <div className="col-12">
-                                    <input type="text" onChange={handleChange} className={[errors.subject.length ? "form-control error-field":"form-control"]}placeholder="subject" name="subject" aria-label="subject" value={formData.subject}/></div>
-                                <p>{errors.subject.length > 0 ? errors.subject : null}</p>
+                                    <input type="text" onChange={handleChange} className={`form-control ${errors.subject.length ? 'error-field' : ''} ${formData.subject ? 'sucess' : ''}`}placeholder="subject" name="subject" aria-label="subject" value={formData.subject}/></div>
+                                <p className="popup">{errors.subject.length > 0 ? errors.subject : null}</p>
                             </div>
                             <div className="col-6">
                                 <label for="message" className="form-label"><h5>Message</h5></label>
                                 <div className="col-12">
-                                    <textarea className={[errors.message.length ? "form-control error-field":"form-control"]} onChange={handleChange} value={formData.message} name="message" style={{ Height: '200px', resize: 'vertical' }}
+                                    <textarea className= {`form-control ${errors.message.length ? 'error-field' : ''} ${formData.message ? 'sucess' : ''}`} onChange={handleChange} value={formData.message} name="message" style={{ Height: '200px', resize: 'vertical' }}
                                         rows="6" cols="50" id="FormControlInput1" />
-                                    <p>{errors.message.length > 0 ? errors.message : null}</p>
+                                    <p className="popup">{errors.message.length > 0 ? errors.message : null}</p>
                                 </div>
                             </div>
                             <div className="col-6">
                                 <div className="mt-4"> <button className="resume" onClick={handleSubmit}>Submit</button> </div>
                             </div>
-                                <p>{suceessMsg.length?suceessMsg:null}</p>
+                                <p className="message">{suceessMsg.length?suceessMsg:null}</p>
                         </div>
 
                     </div>
