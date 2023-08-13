@@ -1,0 +1,42 @@
+{
+    "home" : {
+        "title":"hello ",
+        "subtitle":"A Bit About Me",
+        "description": "I'm a paragraph. Click here to add your own text and edit me.I'm a great place for you to tell a story and let your users to know a little more about you.",
+        
+        "buttons":[
+           {
+            "name": "Resume",
+            "route": "/resume",
+            "class":"resume",
+            "animate":{
+                "initial":{ "opacity": 0," y": "50px" } ,
+                "final":{"opacity": 1," y": ".2px"},
+                "transition":{"duration": ".5", "delay": ".5"}
+            }
+           },
+           {
+            "name": "projects",
+            "route": "/projects",
+            "class":"projects",
+            "animate":{
+                "initial":{ "opacity": 0," y": "52px" } ,
+                "final":{"opacity": 1," y": ".3px"},
+                "transition":{"duration": ".75", "delay": ".8"}
+            }
+           },
+           {
+            "name": "contact",
+            "route": "/contact",
+            "class":"contact",
+            "animate":{
+                "initial":{ "opacity": 0," y": "54px" } ,
+                "final":{"opacity": 1," y": ".4px"},
+                "transition":{"duration": "1", "delay": "1"}
+            }
+           }  
+        ]
+       
+       
+    }
+}
