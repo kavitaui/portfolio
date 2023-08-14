@@ -1,3 +1,4 @@
+import content from "../Asset/content.json"
 import Pic1 from "../Asset/image/Fashion Magazine.jpeg";
 import Pic2 from "../Asset/image/webpage1.jpeg";
 import Pic3 from "../Asset/image/projects.jpeg";

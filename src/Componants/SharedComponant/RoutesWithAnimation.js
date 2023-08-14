@@ -15,7 +15,7 @@ function RoutesWithAnimation() {
                 <Route path="home" element={<HomeComponant />} />
                 <Route path="projects" element={<Projects />} />
                 <Route path="contact" element={<Contact />} />
-                <Route path="Resume" element={<Resume />} />
+                <Route path="resume" element={<Resume />} />
                 <Route path="/" element={<Navigate to="/home" replace />} />
             </Route>
         </Routes>

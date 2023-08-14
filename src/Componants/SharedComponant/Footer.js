@@ -1,3 +1,4 @@
+import content from "../../Asset/content.json";
 export default function Footer(){
     return( 
         
@@ -9,21 +10,18 @@ export default function Footer(){
                 <hr className = "new1"></hr>
                   
                     <div className= "col-3 ">
-                       <p> <h4>Phone: </h4>
-                         123-456-7890</p>
+                       <p> <h4>{content.footer.tele} </h4></p>
                      </div>
                     <div className="col-3 ">
-                     <p><h4>Email</h4>
-                        info@mysite.com</p>
+                     <p><h4>{content.footer.mail}</h4></p>
                     </div>
                     <div className= "col-3  ">
-                       <p><h4> Follow Me
-                        in <i className="bi bi-twitter"></i></h4></p>
+                       <p><h4>{content.footer.tweet} 
+                         <i className="bi bi-twitter"></i></h4></p>
                        
                     </div>
                     <div className="col-3 ">
-                      <p>  2023 By Kavita Pandey
-                       proudly created with wix.com</p>
+                      <p> {content.footer.excontant} </p>
                     </div>
                 </div>
             </div>

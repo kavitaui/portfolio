@@ -1,44 +1,97 @@
 {
-    "home" : {
-        "title":"Hello",
-        "subtitle":"A Bit About Me",
+    "home": {
+        "title": "Hello",
+        "subtitle": "A Bit About Me",
         "description": "I'm a paragraph. Click here to add your own text and edit me.I'm a great place for you to tell a story and let your users to know a little more about you.",
-        "image":{
-          "path":"https://s8d7.turboimg.net/t1/92156874_nicolRider.jpg"
+        "image": {
+            "path": "https://s8d7.turboimg.net/t1/92156874_nicolRider.jpg"
         },
-        "buttons":[
-           {
-            "name": "Resume",
-            "route": "/resume",
-            "class":"resume ",
-            "animate":{
-                "initial":{ "opacity": 0," y": "50px" } ,
-                "final":{"opacity": 1," y": ".2px"},
-                "transition":{"duration": ".5", "delay": ".5"}
+        "buttons": [
+            {
+                "name": "Resume",
+                "route": "/resume",
+                "class": "resume ",
+                "animate": {
+                    "initial": {
+                        "opacity": 0,
+                        " y": "50px"
+                    },
+                    "final": {
+                        "opacity": 1,
+                        " y": ".2px"
+                    },
+                    "transition": {
+                        "duration": ".5",
+                        "delay": ".5"
+                    }
+                }
+            },
+            {
+                "name": "Projects",
+                "route": "/projects",
+                "class": "projects mx-2",
+                "animate": {
+                    "initial": {
+                        "opacity": 0,
+                        " y": "52px"
+                    },
+                    "final": {
+                        "opacity": 1,
+                        " y": ".3px"
+                    },
+                    "transition": {
+                        "duration": ".75",
+                        "delay": ".7"
+                    }
+                }
+            },
+            {
+                "name": "Contact",
+                "route": "/contact",
+                "class": "contact",
+                "animate": {
+                    "initial": {
+                        "opacity": 0,
+                        " y": "54px"
+                    },
+                    "final": {
+                        "opacity": 1,
+                        " y": ".4px"
+                    },
+                    "transition": {
+                        "duration": "1",
+                        "delay": "1"
+                    }
+                }
             }
-           },
-           {
-            "name": "Projects",
-            "route": "/projects",
-            "class":"projects mx-2" ,
-            "animate":{
-                "initial":{ "opacity": 0," y": "52px" } ,
-                "final":{"opacity": 1," y": ".3px"},
-                "transition":{"duration": ".75", "delay": ".7"}
-            }
-           },
-           {
-            "name": "Contact",
-            "route": "/contact",
-            "class":"contact",
-            "animate":{
-                "initial":{ "opacity": 0," y": "54px" } ,
-                "final":{"opacity": 1," y": ".4px"},
-                "transition":{"duration": "1", "delay": "1"}
-            }
-           }  
         ]
-       
-       
-    }
+    },
+    "header": {
+        "logo": {
+            "name": "Kavita Pandey",
+            "url": "/home"
+        },
+        "nav":[ 
+               {
+                    "name": "Resume",
+                    "url": "/Resume"
+                },
+                {
+                    "name":"Projects",
+                    "url": "/projects"
+                },
+                {
+                    "name":"contact",
+                    "url": "/contact"   
+                }
+            ]
+    },
+    "footer":{
+       "tele": "Phone:123-456-7890",
+       "mail": "Email:info@mysite.com",
+        "tweet":"Follow Me in",
+        "excontant": "2023 By Kavita Pandey proudly created with wix.com"
+
+        }
+    
 }
