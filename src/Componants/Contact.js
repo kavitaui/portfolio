@@ -1,4 +1,5 @@
-import { useState } from "react";
+ import content from "../Asset/content.json";
+ import { useState } from "react";
 
 
 export default function contact() {
@@ -122,15 +123,15 @@ export default function contact() {
         <div className="container px-2 py-2">
 
             <div className="col-12 px-2 py-2">
-                <div className="row"><div className="h1">Contact</div>
+                <div className="row"><div className="h1">{content.contact.heading }</div>
                 </div>
                 <div className="row px-2 py-2">
                     <div className="col-6 px-2 py-2">
-                       <h5> Looking forward to hearing from you</h5>
-                        <div><h4>Phone </h4>
-                            123-456-7890</div>
-                        <div><h4>Email:</h4>
-                            info@mysite.com</div>
+                       <h5>{content.contact.para}  </h5>
+                        <div><h4>{content.contact.phone}</h4>
+                        {content.contact.no}</div>
+                        <div><h4>{content.contact.mail}</h4>
+                        {content.contact.id}</div>
                     </div>
                   
                     

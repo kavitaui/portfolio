@@ -2,9 +2,9 @@
     "home": {
         "title": "Hello",
         "subtitle": "A Bit About Me",
-        "description": "I'm a paragraph. Click here to add your own text and edit me.I'm a great place for you to tell a story and let your users to know a little more about you.",
+        "description": " I'm a Proficient front-end UI developer .As a front-end UI developer, I excelled in JavaScript, React, Node.js, and Git. Crafted dynamic interfaces, collaborated on projects, and ensured seamless integration for optimal user experiences.",
         "image": {
-            "path": "https://s8d7.turboimg.net/t1/92156874_nicolRider.jpg"
+            "path": "https://images-kavita.s3.eu-west-1.amazonaws.com/PHOTO-2023.jpg"
         },
         "buttons": [
             {
@@ -92,6 +92,49 @@
         "tweet":"Follow Me in",
         "excontant": "2023 By Kavita Pandey proudly created with wix.com"
 
+        },
+        "contact":{
+            "heading":"Contact",
+            "para":"Looking forward to hearing from you",
+            "phone":"Phone",
+            "no":"123-456-7890",
+            "mail":"Email",
+            "id":"info@mysite.com"
+
+            },
+            "resume":{
+            "heading":"Resume",
+            "subheading":"work Experience",
+            "company":"AlgoMindset",
+            "year":"2020-2023",
+            "MainHeading": "front-end/UI developer",
+            "data": " Proficient JS/React front-end UI developer. Transformed designs into interactive, responsive user interfaces. Collaborated with teams to enhance UX and functionality. Leveraged modern web technologies for efficient, high-quality code. Experienced in optimizing performance and ensuring seamless integration. Strong track record in delivering visually appealing and intuitive web applications."
+         },
+        "Edu":{
+            "heading":"Education",
+            "year":"2010-2013",
+          
+            "Mainheading":"Establishment Name | Bachelor's Degree",
+            "data2": "Maths and Science graduate with strong analytical skills. Proficient in data analysis, problem-solving, and applying logical reasoning to complex issues.",
+            "yearduration":"2015-2016",
+            "heading2": "Establishment Name | computer Degree",
+            "data3":"  certification in computer studies, acquiring fundamental programming, html,css,UI development,'c'language,react,Nodejs,javaScript, hardware, and software knowledge through comprehensive coursework."
+        },
+        "skill":
+        {
+            "heading":"Skills & Expertise",
+            "MainHeading":"HTML,CSS ,github ",
+            "year":"2019-2023",
+            "data1": "Proficient front-end UI developer specializing in HTML and CSS. Leveraged Git for version control, collaborating on projects to create visually appealing and responsive web interfaces",
+            "data":"As a front-end UI developer, I excelled in JavaScript, React, Node.js, and Git. Crafted dynamic interfaces, collaborated on projects, and ensured seamless integration for optimal user experiences.",
+           "heading2":"js,nodejs,react,bootstrap"
+        },
+        "project":{
+         "name":"Projects",
+         "heading1": "Project Name 01",
+         "heading2": "Project Name 02",
+         "heading3": "Project Name 03",
+         "para": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
+
         }
-    
 }

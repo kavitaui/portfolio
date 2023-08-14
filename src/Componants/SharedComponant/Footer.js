@@ -16,8 +16,9 @@ export default function Footer(){
                      <p><h4>{content.footer.mail}</h4></p>
                     </div>
                     <div className= "col-3  ">
-                       <p><h4>{content.footer.tweet} 
-                         <i className="bi bi-twitter"></i></h4></p>
+                       <p><h4>{content.footer.tweet} </h4>
+                         <i className="bi bi-github fs-2" ></i> <i className= "bi bi-linkedin fs-2"></i></p>
+                       
                        
                     </div>
                     <div className="col-3 ">
