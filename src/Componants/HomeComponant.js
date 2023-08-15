@@ -51,7 +51,7 @@ export default function HomeComponant(props) {
 
               <div className="row" >
                 <div className="col-6 px-2 py-2">
-                 <motion.span  variants={childVariants} initial="initial" animate="final"><img className="pic" src={ content.home.image.path} /></motion.span>
+                 <motion.span  variants={childVariants} initial="initial" animate="final" class ="imgWrapper"><img className="pic" src={ content.home.image.path} /></motion.span>
                 </div>
                 <div className="col-6 px-2 py-2 pt-5"><motion.span  variants={childVariants} initial="initial" animate="final" className="h1">{content.home.title}</motion.span>
                   <motion.div   variants={childVariants} initial="initial" animate="final"><h5 className="mt-4">{content.home.subtitle} </h5> </motion.div>

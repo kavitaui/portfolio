@@ -69,10 +69,17 @@ span.h1 {
 
 }
 
-.pic {
-  border-radius: 70%;
-  width: 480px;
+
+  .pic {
+    border-radius: 70%;
+    width: 111%;
+    position: relative;
+    top: 0;
+    zoom: 52%;
+    background: blur;
+    left: -88px;
 }
+
 
 .resume {
   border-radius: 50%;
@@ -187,4 +194,12 @@ span.k{
 }
 .popup{
   color:red;
+}
+.imgWrapper{
+  border: 5px solid white;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 529px;
+  width: 529px;
 }
