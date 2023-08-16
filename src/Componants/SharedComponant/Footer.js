@@ -17,7 +17,8 @@ export default function Footer(){
                     </div>
                     <div className= "col-3  ">
                        <p><h6>{content.footer.tweet} </h6>
-                         <i className="bi bi-github fs-2" ></i> <i className= "bi bi-linkedin fs-2"></i></p>
+                         <a href="https://github.com/kavitaui" > <i className="bi bi-github fs-2" ></i></a>
+                         <a href="https://www.linkedin.com/in/kavita-pandey-9b2102134/" >  <i className= "bi bi-linkedin fs-2"></i></a></p>
                        
                        
                     </div>
