@@ -3,6 +3,11 @@
   text-align: center;
   background-color: #f4f4f4;
 }
+body{
+  font-family: 'Montserrat', sans-serif;
+  
+
+}
 
 .circle {
   border-radius: 50%;
@@ -12,7 +17,7 @@
   border: 0;
   left: -5px;
   top: 6px;
-  z-index: 9999;
+ 
   display: inline-block;
   position: relative;
 }
@@ -84,29 +89,29 @@ span.h1 {
 .resume {
   border-radius: 50%;
   background-color: #eea201;
-  height: 180px;
-  width: 180px;
+  height: 155px;
+  width: 155px;
   border: 2px solid black;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .projects {
   border-radius: 50%;
   background-color: #ff3d24;
-  height: 180px;
-  width: 180px;
+  height: 155px;
+  width: 155px;
   border: 2px solid black;
-  font-size: 30px;
+  font-size: 25px;
 
 }
 
 .contact {
   border-radius: 50%;
   background-color: #7fd8db;
-  height: 180px;
-  width: 180px;
+  height: 155px;
+  width: 155px;
   border: 2px solid black;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .vr {
@@ -200,6 +205,6 @@ span.k{
   display: inline-block;
   border-radius: 50%;
   overflow: hidden;
-  height: 529px;
-  width: 529px;
+  height: 450px;
+  width: 450px;
 }

@@ -19,7 +19,7 @@ export default function Header(props) {
          
           <div className="col-5 px-2 py-5">
             <ul className="list-inline nav-top">
-           {content.header.nav.map(item =>( <li><Link to= {item.url}>{item.name}</Link></li>))}
+          {content.header.nav.map(item =>( <li><Link to= {item.url}>{item.name}</Link></li>))} 
             </ul> 
              
          
