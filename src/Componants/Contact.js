@@ -1,8 +1,11 @@
- import content from "../Asset/content.json";
+ 
  import { useState } from "react";
-
+ import MyContext from "./MyContext";
+ import  {useContext} from 'react';
 
 export default function contact() {
+
+  const contextData = useContext(MyContext);
     const [suceessMsg, setSucessMsg] = useState("");
 
     const [formData, setFormData] = useState({
@@ -123,15 +126,15 @@ export default function contact() {
         <div className="container px-2 py-2">
 
             <div className="col-12 px-2 py-2">
-                <div className="row"><div className="h1">{content.contact.heading }</div>
+                <div className="row"><div className="h1">{contextData?.contact.heading }</div>
                 </div>
                 <div className="row px-2 py-2">
                     <div className="col-6 px-2 py-2">
-                       <h5>{content.contact.para}  </h5>
-                        <div><h4>{content.contact.phone}</h4>
-                        {content.contact.no}</div>
-                        <div><h4>{content.contact.mail}</h4>
-                        {content.contact.id}</div>
+                       <h5>{contextData?.contact.para}  </h5>
+                        <div><h4>{contextData?.contact.phone}</h4>
+                        {contextData?.contact.no}</div>
+                        <div><h4>{contextData?.contact.mail}</h4>
+                        {contextData?.contact.id}</div>
                     </div>
                   
                     

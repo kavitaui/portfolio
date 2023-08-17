@@ -6,12 +6,13 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Outlet } from 'react-router-dom';
 import MyContext from "./Componants/MyContext";
+import { useParams } from 'react-router-dom';
 
 export default function App() {
   const [fname, setFname] = useState('Kavita Pandey');
   const [lname, setLname] = useState('hello');
   const [jsonData, setJsonData] = useState();
- 
+  const { name } = useParams();
   const clickMe = function (name) {
     alert("click me");
     setFname(name);
@@ -22,34 +23,34 @@ export default function App() {
 
     setLname(name);
   }
-  useEffect(() =>{
-    async function fetchData () {
+  useEffect(() => {
+    async function fetchData() {
       try {
-        const response = await axios.get('https://json.extendsclass.com/bin/4eab6074ad22');
+        const manoj = "https://json.extendsclass.com/bin/70dd1ab76fab";
+        const kavita = 'https://json.extendsclass.com/bin/4eab6074ad22';
+
+        const response = await axios.get(name === "manoj"?manoj:kavita);
         setJsonData(response.data);
         console.log(jsonData);
       }
-    
+
       catch (error) {
         console.error('error fetching JSON:error')
       }
     }
-      fetchData();
-   
-    }, [])
+    fetchData();
+
+  }, [])
 
 
   return (
-         
+
     <div className="container-fluid">
-     <MyContext.provider value={jsonData}>
-      <Header value={fname} message={clickMe} />
-      
-      <Outlet />
-
-      <Footer />
-
-</MyContext.provider>
+      <MyContext.Provider value={jsonData}>
+        <Header value={fname} message={clickMe} />
+        <Outlet />
+        <Footer />
+      </MyContext.Provider>
 
     </div>
   );
