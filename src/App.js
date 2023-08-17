@@ -4,7 +4,8 @@ import Footer from "./Componants/SharedComponant/Footer";
 import HomeComponant from "./Componants/HomeComponant";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
+import MyContext from "./Componants/MyContext";
 
 export default function App() {
   const [fname, setFname] = useState('Kavita Pandey');
@@ -39,15 +40,16 @@ export default function App() {
 
 
   return (
-
+         
     <div className="container-fluid">
+     <MyContext.provider value={jsonData}>
       <Header value={fname} message={clickMe} />
-
+      
       <Outlet />
 
       <Footer />
 
-
+</MyContext.provider>
 
     </div>
   );
