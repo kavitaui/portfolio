@@ -151,7 +151,7 @@ export default function contact() {
                             <div className="col-6">
                                 <label for="lname" className="form-label"><h5>Last Name</h5></label>
                                 <div className="col-12">
-                                    <input type="text" onChange={handleChange} className={`form-control ${errors.lname.length ? 'error-field' : ''} ${formData.lname ? 'sucess' : ''}`} placeholder="Last name" aria-label="Last name" name="lname" value={formData.lname}/></div>
+                                    <input type="text" onChange={handleChange} className={`form-control ${errors.lname.length ? 'error-field' : ''} ${formData.lname ? 'sucess' : ''}`} placeholder="Last name" aria-label="Last name" name="lname" value={formData.lname} /></div>
                                 <p className="popup">{errors.lname.length > 0 ? errors.lname : null}</p>
                             </div>
 
