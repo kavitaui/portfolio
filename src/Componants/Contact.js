@@ -27,7 +27,7 @@ export default function contact() {
         message: ''
     });
     const handleSubmit = (e) => {
-        debugger;
+        
         e.preventDefault();
 
         if (validateForm()) {
@@ -52,7 +52,7 @@ export default function contact() {
     };
     const handleChange = (e) => {
 
-        debugger;
+        
         const name = e.target.name;
         const value = e.target.value;
         setFormData((prevData) => ({
@@ -65,7 +65,7 @@ export default function contact() {
     };
 
     const validateForm = () => {
-        debugger;
+        
         let isValid = true;
         const newErrors = { ...errors };
 
