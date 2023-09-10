@@ -65,7 +65,7 @@ export default function contact() {
     };
 
     const validateForm = () => {
-        
+        debugger;
         let isValid = true;
         const newErrors = { ...errors };
 
