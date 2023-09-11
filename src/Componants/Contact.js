@@ -172,7 +172,7 @@ export default function contact() {
                                 <label for="Email" className="form-label"><h5>Email*</h5></label>
 
                                 <div className="col-12">
-                                    <input type="text" onChange={handleChange} className={`form-control ${errors.email.length ? 'error-field' : ''} ${formData.email ? 'sucess' : ''}`} placeholder="email" name="email" aria-label="first name" value={formData.email} />
+                                    <input type="" onChange={handleChange} className={`form-control ${errors.email.length ? 'error-field' : ''} ${formData.email ? 'sucess' : ''}`} placeholder="email" name="email" aria-label="first name" value={formData.email} />
                                     <p className="popup">{errors.email.length > 0 ? errors.email : null}</p>
                                 </div>
                             </div>
